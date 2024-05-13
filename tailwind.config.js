@@ -12,6 +12,11 @@ module.exports = {
       backgroundImage: {
         'login-bg': "linear-gradient(to bottom, rgba(105, 79, 254, 0.2), rgba(0, 0, 0)), url('/bg/login.jpg')",
       },
+      screens: {
+        xs: '400px',
+        '3xl': '1680px',
+        '4xl': '2200px',
+      },
     },
   },
   plugins: [],
