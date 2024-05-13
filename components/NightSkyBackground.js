@@ -1,5 +1,4 @@
-// NightSkyBackground.js
-
+'use client'
 import React, { useEffect } from 'react';
 
 const NightSkyBackground = () => {

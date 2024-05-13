@@ -122,7 +122,7 @@ const Login = () => {
                             height={40}
                             className="w-auto h-auto min-w-[150px]"
                         />
-                        <p className="regular-16 mt-6 text-secondary xl:max-w-[520px] text-center">
+                        <p className="regular-16 mt-6 text-white xl:max-w-[520px] text-center">
                             Unveil Infinite Worlds! <br />
                             3D Terrain Generation Thorugh Procedural Generation
                         </p>

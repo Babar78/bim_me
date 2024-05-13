@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import NightSkyBackground from "@/components/NightSkyBackground";
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata = {
   title: "Bim.me",
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NightSkyBackground />
+        <div className="z-10">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
