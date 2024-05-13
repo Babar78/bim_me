@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #694ffe;
-  --secondary: #984fff;
+  --primary: rgb(105, 79, 254);
+  --secondary: rgb(152, 79, 255);
 }
 
 * {
