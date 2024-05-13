@@ -6,6 +6,7 @@ import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import LoadingBackdrop from "@/components/LoadingBackdrop";
+import { useRouter } from 'next/navigation';
 
 const gerenationOptions = [
   { label: 'Mountains', value: 'mountains' },
@@ -16,11 +17,22 @@ const gerenationOptions = [
 export default function Home() {
 
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  const handleGenerate = () => {
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+      router.push('/terrain');
+    }, 10000);
+  };
+
 
   return (
     <>
       <LoadingBackdrop loading={loading} />
-      <main className="bg-black h-screen flex flex-col w-full">
+      <main className="bg-black h-screen flex flex-col w-full overflow-hidden">
         <Navbar />
         <div className="flex-1 h-full flex justify-center items-center z-10">
           <div className="h-fit text-center max-w-[1000px] flex flex-col justify-between min-h-[500px] px-2">
@@ -41,7 +53,7 @@ export default function Home() {
             </div>
             <div className="w-full flex md:flex-row flex-col gap-5 items-center">
               <input placeholder="Enter Prompt Here!" className="bg-gray-100 p-3 rounded-lg md:flex-1 w-full focus:outline-secondary" />
-              <Button variant="contained" color="primary" className="bg-gradientPattern rounded-lg w-fit h-[48px]">Generate &nbsp; <AutoAwesomeIcon fontSize="16" /></Button>
+              <Button variant="contained" color="primary" className="bg-gradientPattern rounded-lg w-fit h-[48px]" onClick={handleGenerate}>Generate &nbsp; <AutoAwesomeIcon fontSize="16" /></Button>
             </div>
           </div>
         </div>
