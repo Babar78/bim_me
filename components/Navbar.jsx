@@ -31,7 +31,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='max-w-[1440px] mx-auto h-[80px] flex items-center justify-between px-2 w-full'>
+        <nav className='max-w-[1440px] mx-auto h-[80px] flex items-center justify-between px-2 w-full z-10'>
             <Image src='logo/logo.svg' alt='logo' width={150} height={100} />
             <ul className='flex gap-10 text-white items-center'>
                 <Link href={"#"} className='hover:text-[#994fff]'>Models</Link>
