@@ -1,10 +1,11 @@
 'use client'
+import React, { useState } from 'react';
 import Navbar from "@/components/Navbar";
 import { Button } from "@mui/material";
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import NightSkyBackground from "@/components/NightSkyBackground";
+import LoadingBackdrop from "@/components/LoadingBackdrop";
 
 const gerenationOptions = [
   { label: 'Mountains', value: 'mountains' },
@@ -13,8 +14,12 @@ const gerenationOptions = [
 ];
 
 export default function Home() {
+
+  const [loading, setLoading] = useState(false);
+
   return (
     <>
+      <LoadingBackdrop loading={loading} />
       <main className="bg-black h-screen flex flex-col w-full">
         <Navbar />
         <div className="flex-1 h-full flex justify-center items-center z-10">
