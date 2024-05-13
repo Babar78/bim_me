@@ -123,7 +123,8 @@ const Login = () => {
                             className="w-auto h-auto min-w-[150px]"
                         />
                         <p className="regular-16 mt-6 text-green-50 xl:max-w-[520px] text-center">
-                            Unleash Your Wanderlust: Where Adventure Begins
+                            Unveil Infinite Worlds! <br />
+                            3D Terrain Generation Thorugh Procedural Generation
                         </p>
                     </div>
                 </div>
