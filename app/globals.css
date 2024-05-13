@@ -39,6 +39,12 @@ body {
   color: var(--secondary);
 }
 
+.text-gradient {
+  background: linear-gradient(-180deg, #6a4ffe 0%, #994fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @layer utilities {
   .btn_white {
     @apply border-white bg-white px-8 py-3 text-green-50;

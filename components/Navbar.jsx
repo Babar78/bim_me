@@ -31,11 +31,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='max-w-[1440px] mx-auto h-[80px] flex items-center justify-between px-2'>
-            <Image src='logo/logo.svg' alt='logo' width={100} height={100} />
-            <ul className='flex gap-10 text-white hover:text-secondary items-center'>
-                <Link href={"#"}>Models</Link>
-                <Link href={"#"}>Subscriptions</Link>
+        <nav className='max-w-[1440px] mx-auto h-[80px] flex items-center justify-between px-2 w-full'>
+            <Image src='logo/logo.svg' alt='logo' width={150} height={100} />
+            <ul className='flex gap-10 text-white items-center'>
+                <Link href={"#"} className='hover:text-[#994fff]'>Models</Link>
+                <Link href={"#"} className='hover:text-[#994fff]'>Subscriptions</Link>
                 <Box sx={{ flexGrow: 0 }}>
                     <Tooltip title="Open settings">
                         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
